@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+         margin: auto;
+        max-width: 600px;
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: #ffc1c8;
+    }
+
+    img {
+        max-width: 400px;
+        border-radius: 10px;
+    }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ffcece; 
+        padding: 20px; 
+        border-radius: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        background: #ffc1c8;
+        font-size: 20px;
+        border-radius: 25px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+        
+        
+      }
+      button:hover {
+        background: #ff004d; 
+        cursor: pointer;
+        
+      }
+      
+      footer {
+        text-align: center;
+        margin: 10px 0;
+      }
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: white;
+        padding: 8px 10px;
+        margin: 20px auto;
+        
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+      
+      .selfcare-intro-picture { 
+        transition: all 150ms ease-in-out;
+      }
+
+      .selfcare-intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+        
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: white;
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 15px;
+      }
+      .grid img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+      .dark{
+        background: #9d0b28;
+      
+      color:  black;
+    }
+
+
+      .dark .container{
+        background: #ff004d; 
+      }
+      .dark a{
+color: #ff004d;
+      }
+    </style>
+    <body>
+    <button class="theme-button">Dark theme</button>
+    <div class="container">
+      <h1>🎀<br>
+        Self Care</h1>
+      <a href="https://www.pinterest.co.uk/search/pins/?q=self%20care&rs=typed" target="_blank">
+        <img
+          src="https://i.pinimg.com/564x/26/56/f8/2656f8acf63a26b93bdea057c5f3787f.jpg"
+          class="selfcare-intro-picture"
+      /></a>
+      <div class="grid">
+        <img
+          src="https://i.pinimg.com/564x/83/c6/84/83c68454dabb796449b56de01d772d30.jpg"
+          alt=""
+        />
+        <img
+          src="https://i.pinimg.com/564x/b8/56/fc/b856fc5ef990562f9fb79d01fb0ec712.jpg"
+          alt=""
+        />
+        <img
+          src="https://i.pinimg.com/originals/71/ab/70/71ab704d5c010668b175b766e873c486.jpg"
+          alt=""
+        />
+        <img
+          src="https://i.pinimg.com/750x/03/8b/0e/038b0eb0190c910385d75cd59d611675.jpg"
+          alt=""
+        />
+      </div>
+      <p>
+        Self-care activities can certainly be considered a hobby. Engaging in self-care is a way of taking care of oneself and can involve a variety of different activities, such as meditation, yoga, journaling, taking a relaxing bath, going for a walk in nature, practicing mindfulness, or engaging in a favorite hobby or leisure activity. By making self-care a regular part of one's routine, it can help reduce stress, improve well-being, and promote overall health. So, while it is not a traditional hobby, self-care can still be considered a form of hobby that is focused on personal growth, relaxation, and self-improvement.
+      </p>
+      <a style="text-decoration: none" href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health#:~:text=a%20mental%20illness.-,About%20Self%2DCare,illness%2C%20and%20increase%20your%20energy." target="_blank">
+      <button>Learn more about Self Care</button></a>
+    </div>
+    <footer>
+      Coded with 🤍 by
+      <a href="https://www.shecodes.io/graduates/74743-delina-carnaffin" target="_blank">Delina
+</a><img
+  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/016/original/junimo-animated.gif?1678967437"
+  alt="junimo-gif"
+/>
+
+    </footer>
+    <script>
+        function changeTheme(){
+            let body = document.querySelector("body");
+            body.classList.toggle("dark");
+        }
+
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+     </script>
+  </body>
+</html>
