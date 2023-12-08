@@ -1,0 +1,102 @@
+ body {
+         margin: auto;
+        max-width: 600px;
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: #ffc1c8;
+    }
+
+    img {
+        max-width: 400px;
+        border-radius: 10px;
+    }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ffcece; 
+        padding: 20px; 
+        border-radius: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        background: #ffc1c8;
+        font-size: 20px;
+        border-radius: 25px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+        
+        
+      }
+      button:hover {
+        background: #ff004d; 
+        cursor: pointer;
+        
+      }
+      
+      footer {
+        text-align: center;
+        margin: 10px 0;
+      }
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: white;
+        padding: 8px 10px;
+        margin: 20px auto;
+        
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+      
+      .selfcare-intro-picture { 
+        transition: all 150ms ease-in-out;
+      }
+
+      .selfcare-intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+        
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: white;
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 15px;
+      }
+      .grid img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+      .dark{
+        background: #9d0b28;
+      
+      color:  black;
+    }
+
+
+      .dark .container{
+        background: #ff004d; 
+      }
+      .dark a{
+color: #ff004d;
+      }
